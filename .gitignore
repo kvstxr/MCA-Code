@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Java
+*.class
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# C
+*.exe
