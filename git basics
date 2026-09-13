@@ -1,0 +1,20 @@
+git status
+git add .
+git commit -m "message"
+git push
+
+git status
+↓
+"What changed?"
+
+git add .
+↓
+"Prepare my changes."
+
+git commit -m "Added DS set 4"
+↓
+"Save this checkpoint."
+
+git push
+↓
+"Upload it to GitHub."
