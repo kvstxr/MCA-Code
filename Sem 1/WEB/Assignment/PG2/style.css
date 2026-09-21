@@ -1,0 +1,135 @@
+:root {
+    --ink: #173042;
+    --blue: #176b87;
+    --paper: #fffdf7;
+    --background: #e8f1ed;
+    --body-font: "Open Sans", Arial, sans-serif;
+    --heading-font: Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+h1, h2, h3 { font-family: var(--heading-font); }
+
+/* Navigation frame */
+.menu-page {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px 16px;
+    color: #fff8e8;
+    background: #123047;
+    font-family: var(--body-font);
+    text-align: center;
+}
+
+.menu-page h1 {
+    margin: 0 0 22px;
+    color: #f4c95d;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: var(--heading-font);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.nav-links a {
+    display: block;
+    width: 100%;
+    padding: 16px 14px;
+    border: 1px solid #9bd4c9;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--body-font);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #123047;
+    background: #f4c95d;
+}
+
+/* Shared content page layout */
+.home-page,
+.places-page,
+.temple-page,
+.fort-page {
+    margin: 0;
+    font: 16px/1.65 var(--body-font);
+}
+
+.home-page {
+    color: var(--ink);
+    background: var(--background);
+}
+
+.home-page .main {
+    max-width: auto;
+    margin: auto;
+    padding: 28px;
+    background: var(--paper);
+    border-top: 6px solid #e9b949;
+    box-shadow: 0 5px 18px #17304222;
+}
+
+.home-page h1 { margin-top: 0; color: var(--blue); font-size: 34px; }
+.home-page h2 { color: #b05b3b; }
+.home-page .tagline { color: #b05b3b; font-style: italic; }
+.home-page .picture { margin: 22px 0; text-align: center; }
+.home-page img { width: 100%; max-height: 360px; object-fit: cover; border-radius: 4px; }
+.home-page .caption { margin-top: 6px; color: #52656d; font-size: 14px; }
+.home-page .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; padding: 0; list-style: none; }
+.home-page .facts li { padding: 12px; border-left: 4px solid #2a9d8f; background: #edf7f3; }
+.home-page a { color: var(--blue); font-weight: bold; }
+
+.places-page {
+    color: var(--ink);
+    background: var(--background);
+}
+
+.places-page .main,
+.temple-page .main,
+.fort-page .main {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+
+.page-heading {
+    margin: 0 0 20px;
+    padding: 22px;
+    background: var(--paper);
+    text-align: center;
+    box-shadow: 0 4px 14px #1730421c;
+}
+
+.page-heading h1 { margin: 0; }
+.page-heading p { margin: 10px 0 0; }
+.places-page .page-heading { border-top: 6px solid #e9b949; }
+.places-page h1 { color: var(--blue); }
+.places-page .card { margin: 20px 0; padding: 20px; background: var(--paper); border-left: 5px solid #e9b949; box-shadow: 0 4px 14px #1730421c; }
+.places-page h2 { margin-top: 0; color: #b05b3b; }
+.places-page img { display: block; width: 100%; max-width: 520px; height: 245px; object-fit: cover; border-radius: 4px; }
+.places-page a { color: var(--blue); font-weight: bold; }
+
+.temple-page { color: #382b21; background: #fbf3df; }
+.temple-page .page-heading { border-top: 6px solid #b97824; }
+.temple-page h1 { color: #8d4d25; }
+.temple-page .section { margin: 20px 0; padding: 22px; background: var(--paper); border-left: 6px solid #b97824; box-shadow: 0 4px 14px #5b3b1c1c; }
+.temple-page h2 { margin-top: 0; color: #8d4d25; }
+.temple-page img { display: block; width: 100%; max-width: 500px; height: 270px; object-fit: cover; border-radius: 4px; }
+.temple-page a { color: #8d4d25; font-weight: bold; }
+
+.fort-page { color: #24313a; background: #e9eef0; }
+.fort-page .page-heading { border-top: 6px solid var(--blue); }
+.fort-page h1 { color: var(--blue); }
+.fort-page .fort-box { margin: 20px 0; padding: 22px; background: var(--paper); border-left: 6px solid var(--blue); box-shadow: 0 4px 14px #24313a1c; }
+.fort-page h2 { margin-top: 0; color: #a14f38; }
+.fort-page img { display: block; width: 100%; max-width: 560px; height: 285px; object-fit: cover; border-radius: 4px; }
+.fort-page a { color: var(--blue); font-weight: bold; }
