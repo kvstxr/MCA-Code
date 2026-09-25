@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>MCA Student Registration</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="form-page">
+	<main class="form-container">
+		<h1>MCA Student Registration</h1>
+		<p class="form-intro">Complete the form to apply for the MCA programme.</p>
+
+		<form>
+			<label for="full-name">Full Name</label>
+			<input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+			<label for="date-of-birth">Date of Birth</label>
+			<input type="date" id="date-of-birth" name="date-of-birth" required>
+
+			<div class="option-group">
+				<p class="group-title">Gender</p>
+				<label class="option"><input type="radio" name="gender" value="male" required> Male</label>
+				<label class="option"><input type="radio" name="gender" value="female"> Female</label>
+				<label class="option"><input type="radio" name="gender" value="other"> Other</label>
+			</div>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="student@example.com" required>
+
+			<label for="phone">Phone Number</label>
+			<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+			<label for="address">Address</label>
+			<textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+
+			<label for="course">Previous Course</label>
+			<select id="course" name="course" required>
+				<option value="">Select a course</option>
+				<option>BCA</option>
+				<option>BSc Computer Science</option>
+				<option>BTech</option>
+				<option>Other</option>
+			</select>
+
+			<label for="college">Previous College Name</label>
+			<input type="text" id="college" name="college" required>
+
+			<label for="cgpa">CGPA</label>
+			<input type="number" id="cgpa" name="cgpa" min="0" max="10" step="0.01" placeholder="For example, 8.50" required>
+
+			<div class="option-group">
+				<p class="group-title">Activities</p>
+				<label class="option"><input type="checkbox" name="activities" value="sports"> Sports</label>
+				<label class="option"><input type="checkbox" name="activities" value="ncc"> NCC</label>
+				<label class="option"><input type="checkbox" name="activities" value="nss"> NSS</label>
+			</div>
+
+			<label for="photo">Upload Profile Photo</label>
+			<input type="file" id="photo" name="photo" accept="image/*">
+
+			<div class="form-actions">
+				<button type="submit" style="background-color: #1c6e63;">Submit Application</button>
+				<button type="reset" class="reset-button">Clear</button>
+			</div>
+		</form>
+	</main>
+</body>
+</html>
